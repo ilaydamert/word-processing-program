@@ -101,6 +101,7 @@ bool kackere(string kelime)
 			gecici = gecici->sonraki;
 		}
 		gecici->veri.kackere++;
+
 	}
 	else {
 		return -1;
