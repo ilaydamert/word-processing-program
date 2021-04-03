@@ -30,7 +30,7 @@ void listele() {
 	ptr = liste.bas;
 	if (liste.bas == NULL)
 	{
-		cout << "Liste boş."<<endl;
+		cout << "Liste boş." << endl;
 	}
 	else{
 		cout << "Elemanlar: " << endl;
