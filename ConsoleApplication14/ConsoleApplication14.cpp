@@ -218,23 +218,23 @@ void kackez_sırala() {
 	a = elemansayisi_bulma();
 	while (ptr->sonraki!=NULL)
 	{
-		for (int i = 0; i < a; i++) {
-			for (int j = 0; j < a; j++)
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < a; j++)
+		{
+			if (ptr->sonraki != NULL)
 			{
-				if (ptr->sonraki != NULL)
-				{
-					if (int(ptr->veri.kackere) < (ptr->sonraki->veri.kackere)) {
-						temp = ptr->veri.kackere;
-						ptr->veri.kackere = ptr->sonraki->veri.kackere;
-						ptr->sonraki->veri.kackere = temp;
-						string(temp) = ptr->veri.kelime;
-						ptr->veri.kelime = ptr->sonraki->veri.kelime;
-						ptr->sonraki->veri.kelime = string(temp);
-					}
-					else {
-						ptr = ptr->sonraki;
-					}
-					}}}}
+				if (int(ptr->veri.kackere) < (ptr->sonraki->veri.kackere)) {
+				temp = ptr->veri.kackere;
+				ptr->veri.kackere = ptr->sonraki->veri.kackere;
+				ptr->sonraki->veri.kackere = temp;
+				string(temp) = ptr->veri.kelime;
+				ptr->veri.kelime = ptr->sonraki->veri.kelime;
+				ptr->sonraki->veri.kelime = string(temp);
+			}
+			else {
+				ptr = ptr->sonraki;
+			}
+			}}}}
 }
 void alfabetik_sırala() {
 struct dugum* ptr;
@@ -248,21 +248,21 @@ while (ptr->sonraki != NULL)
 {
 	for (int i = 0; i < a; i++) {
 		for (int j = 0; j < a; j++)
-			{
+		{
 			if (ptr->sonraki != NULL)
-				{
-				  if ((ptr->veri.kelime) > (ptr->sonraki->veri.kelime)) {
-					 temp = ptr->veri.kackere;
-					 ptr->veri.kackere = ptr->sonraki->veri.kackere;
-					 ptr->sonraki->veri.kackere = temp;
-					 string(temp) = ptr->veri.kelime;
-					 ptr->veri.kelime = ptr->sonraki->veri.kelime;
-					 ptr->sonraki->veri.kelime = string(temp);
-				  }
-				   else {
-						 ptr = ptr->sonraki;
-							}}}
-				}}
+			{
+			  if ((ptr->veri.kelime) > (ptr->sonraki->veri.kelime)) {
+				 temp = ptr->veri.kackere;
+				 ptr->veri.kackere = ptr->sonraki->veri.kackere;
+				 ptr->sonraki->veri.kackere = temp;
+				 string(temp) = ptr->veri.kelime;
+				 ptr->veri.kelime = ptr->sonraki->veri.kelime;
+				 ptr->sonraki->veri.kelime = string(temp);
+			  }
+	     	   else {
+				 ptr = ptr->sonraki;
+				}}}
+		}}
 }
 
 		
